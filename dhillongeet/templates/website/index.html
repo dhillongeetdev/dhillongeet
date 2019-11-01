@@ -1,0 +1,145 @@
+{% extends 'website/base.html' %}
+{% load staticfiles %}
+
+{% block cssload %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+  <script type="text/javascript" src='{% static "js/script.js" %}'></script>
+{% endblock %}
+
+
+{% block menu %}
+  <li class="active"><a href="{% url '' %}">Home</a></li>
+  <li><a href="{% url 'about' %}">About</a></li>
+  <li><a href="{% url 'contact' %}">Contact</a></li>
+  <li><a href="{% url 'services' %}">Services</a></li>
+{% endblock %}
+
+<!-- slider section -->
+{% block section0 %}
+
+{% endblock %}
+
+<!-- Get to Know & About Section -->
+{% block section1 %}
+  <div class='home-section1'>
+    <div class='home-section1-mainheading'>
+      <h1>Let's Walk you through !!!</h1>
+    </div>
+    <div class="home-section1-left">
+      <div class="home-section1-left-title">
+        <h2> What is Lorem Ipsum?</h2>
+      </div>
+      <div class="home-section1-left-content">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      </div>
+      <div class="home-section1-left-image">
+          <img height='400px' width='400px' src='{% static "images/1.jpg" %}' alt="No display"/>
+      </div>
+    </div>
+    <div class="home-section1-right">
+      <div class="home-section1-right-title">
+        <h2> What is Lorem Ipsum?</h2>
+      </div>
+      <div class="home-section1-right-content">
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      </div>
+      <div class="home-section1-right-image" >
+          <img height='200px' width='200px' src="{% static 'images/2.jpg' %}" alt="No display"/>
+      </div>
+    </div>
+    <div class="home-section1-left-dropdown">
+            <div class="accordion_item">
+              <a href="#tab1" class="accordion_trigger accordion_title"> What is Lorem Ipsum?</a>
+              <div id="tab1" class="accordion_content"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
+            </div>
+            <div class="accordion_item">
+              <a href="#tab2" class="accordion_trigger accordion_title"> What is Lorem Ipsum?</a>
+              <div id="tab2" class="accordion_content"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
+            </div>
+            <div class="accordion_item">
+              <a href="#tab3" class="accordion_trigger accordion_title"> What is Lorem Ipsum?</a>
+              <div id="tab3" class="accordion_content"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
+            </div>
+
+            <div class="accordion_item">
+              <a href="#tab4" class="accordion_trigger accordion_title"> What is Lorem Ipsum?</a>
+              <div id="tab4" class="accordion_content"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
+            </div>
+            <div class="accordion_item">
+              <a href="#tab5" class="accordion_trigger accordion_title"> What is Lorem Ipsum?</a>
+              <div id="tab5" class="accordion_content">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
+            </div>
+
+            <div class="accordion_item">
+              <a href="#tab6" class="accordion_trigger accordion_title"> What is Lorem Ipsum?</a>
+              <div id="tab6" class="accordion_content"><p>YLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
+            </div>
+    </div>
+    <div class="home-section1-right-dropdown-image">
+      <img src="{% static 'images/2.jpg' %}" alt="" height='400px' width='250px'>
+    </div>
+    <div class="home-section1-clear">
+
+    </div>
+  </div>
+
+{% endblock %}
+
+<!-- Services Section -->
+{% block section2 %}
+  <div class="home-section2">
+    <div class="home-section2-container">
+      <div class="home-section2-box">
+        <img src="{% static 'images/2.jpg' %}" alt="" height="100px" width="100px">
+        <h2> What is Lorem Ipsum?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+           in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+           deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="home-section2-box">
+        <img src="{% static 'images/2.jpg' %}" alt="" height="100px" width="100px">
+        <h2> What is Lorem Ipsum?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+           in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+           deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="home-section2-box">
+        <img src="{% static 'images/2.jpg' %}" alt="" height="100px" width="100px">
+        <h2> What is Lorem Ipsum?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+           in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+           deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="home-section2-box">
+        <img src="{% static 'images/2.jpg' %}" alt="" height="100px" width="100px">
+        <h2> What is Lorem Ipsum?g</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+           in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+           deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="home-section2-box">
+        <img src="{% static 'images/2.jpg' %}" alt="" height="100px" width="100px">
+        <h2> What is Lorem Ipsum?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+           in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+           deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="home-section2-box">
+        <img src="{% static 'images/2.jpg' %}" alt="" height="100px" width="100px">
+        <h2> What is Lorem Ipsum?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+           in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+           deserunt mollit anim id est laborum.</p>
+      </div>
+      <button type="button" name="button">Lets Discover the Services</button>
+    </div>
+
+  </div>
+{% endblock %}
